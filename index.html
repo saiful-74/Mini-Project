@@ -1,21 +1,12 @@
-<?php
-include 'db.php';
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    $role = $_POST['role'];
-
-    $sql = "INSERT INTO users (username, password, role) VALUES ('$username', '$password', '$role')";
-    if ($conn->query($sql)) {
-        echo "Registration successful. <a href='login.php'>Login here</a>";
-    } else {
-        echo "Error: " . $conn->error;
-    }
-}
-?>
-
-<form method="POST">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
     <Div>
         ID:<input type="text" id="text1" name="id"><br>
         Password:<input type="password" id="text2" name="password"><br>
@@ -30,4 +21,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="submit" value="Register" id="submitBtn">
         <a href="login.html">Log in</a>
     </Div>
-</form>
+</body>
+</html>
