@@ -37,6 +37,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="submit" value="Login" id="loginBtn">
         <a href="index.html">Register</a>
 </form>
-<!--  Username: <input type="text" name="username" required><br><br>
-    Password: <input type="password" name="password" required><br><br>
-    <input type="submit" value="Login"> -->
