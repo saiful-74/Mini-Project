@@ -30,7 +30,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <form method="POST">
-    Username: <input type="text" name="username" required><br><br>
-    Password: <input type="password" name="password" required><br><br>
-    <input type="submit" value="Login">
+   <h1>After Login</h1>
+        User id<input type="text" id="userId" name="user_id"><br>
+        Password<input type="password" id="userPassword" name="user_password"><br>
+        remember me<input type="checkbox" id="rememberMe" name="remember_me"><br>
+        <input type="submit" value="Login" id="loginBtn">
+        <a href="index.html">Register</a>
 </form>
+<!--  Username: <input type="text" name="username" required><br><br>
+    Password: <input type="password" name="password" required><br><br>
+    <input type="submit" value="Login"> -->

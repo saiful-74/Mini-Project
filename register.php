@@ -31,3 +31,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <a href="login.html">Log in</a>
     </Div>
 </form>
+<
